@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Vue playground</title>
+</head>
+<body>
+    <div id="contenedorApp">
+    <h1>Hello world!</h1>
+        <h2>Contador: {{contador}}</h2>
+    </div>
+        
+    <div id="bind-attribute">
+        <span v-bind:title="message">Here is an updated title with the current date.</span>
+    </div>
+    
+    <div id="event-binding">
+        <h2>Event Handling</h2>
+        <p>{{ texto }}</p>
+        <button v-on:click="invertirTexto">Invertir Texto</button>
+    </div>
+
+    <div id="directiva-v-model">
+        <h2>Directiva v-model permite vinculación bidireccional de estado</h2>
+        <input v-model="mensaje" type="text">
+        <p class="texto-reactivo">{{ mensaje }}</p>
+
+    </div>
+
+
+<script src="https://unpkg.com/vue@3"></script>
+<script src="index.js"></script>
+</body>
+</html>

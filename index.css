@@ -1,0 +1,11 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texto-reactivo{
+    color: darkslateblue;
+    border: 1px deepskyblue solid;
+    display: block;
+    padding: 5px;
+    width: fit-content;
+}
